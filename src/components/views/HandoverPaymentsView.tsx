@@ -1,7 +1,6 @@
 import React from 'react';
 import { useDashboard } from '../../context/DashboardContext';
 import { 
-  Sparkles, 
   CheckCircle2, 
   Clock, 
   ShieldAlert, 
@@ -17,7 +16,6 @@ export const HandoverPaymentsView: React.FC = () => {
     computedAdvancePct,
     totalPaidOut,
     pendingSettlementTotal,
-    setActiveFormulaModal,
     setActiveTab
   } = useDashboard();
 

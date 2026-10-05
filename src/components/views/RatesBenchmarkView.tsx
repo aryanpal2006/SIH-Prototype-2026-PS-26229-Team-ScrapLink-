@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useDashboard } from '../../context/DashboardContext';
 import { 
-  Sparkles, 
   ArrowUpRight, 
   Info
 } from 'lucide-react';
@@ -13,7 +12,6 @@ export const RatesBenchmarkView: React.FC = () => {
     updateMaterialRate, 
     calculateRateScore, 
     t, 
-    setActiveFormulaModal,
     setActiveTab
   } = useDashboard();
 

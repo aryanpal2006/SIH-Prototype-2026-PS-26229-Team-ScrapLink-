@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDashboard } from '../../context/DashboardContext';
 import { 
-  Sparkles, 
+  Sparkles,
   Zap,
   RotateCcw
 } from 'lucide-react';
@@ -13,8 +13,7 @@ export const ReliabilityView: React.FC = () => {
     updateReliabilityMetrics, 
     computedReliabilityScore, 
     computedTier,
-    computedAdvancePct,
-    setActiveFormulaModal
+    computedAdvancePct
   } = useDashboard();
 
   // Reset to default

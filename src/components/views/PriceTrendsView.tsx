@@ -1,14 +1,13 @@
 import React from 'react';
 import { useDashboard } from '../../context/DashboardContext';
 import { 
-  Sparkles, 
   ArrowUpRight, 
   ArrowDownRight,
   Info
 } from 'lucide-react';
 
 export const PriceTrendsView: React.FC = () => {
-  const { materials, setActiveFormulaModal } = useDashboard();
+  const { materials } = useDashboard();
 
   // Helper to render an SVG sparkline path
   const renderSparkline = (history: { date: string; price: number }[], isUp: boolean) => {

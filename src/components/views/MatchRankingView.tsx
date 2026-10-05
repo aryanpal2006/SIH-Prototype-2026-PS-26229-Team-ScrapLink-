@@ -20,8 +20,7 @@ export const MatchRankingView: React.FC = () => {
     computedTier,
     calculateRateScore, 
     calculateProximityScore, 
-    calculateMatchScore,
-    setActiveFormulaModal
+    calculateMatchScore
   } = useDashboard();
 
   // Test Simulation state for collector lot

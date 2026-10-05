@@ -57,9 +57,16 @@ export const Header: React.FC = () => {
 
       {/* Right Controls */}
       <div className="flex items-center space-x-2 sm:space-x-3">
-
-
-        {/* Offline Simulator Switch */}
+        {/* Judge Criteria / Formula Explainer Trigger */}
+        <button
+          onClick={() => setActiveFormulaModal('active')}
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 transition-all shadow-sm"
+          title="Open SIH Judge Criteria and Dataset Mapping"
+        >
+          <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
+          <span className="hidden md:inline">Judge Criteria & Formulas</span>
+          <span className="md:hidden">Formulas</span>
+        </button>
         <div className="flex items-center">
           <button
             onClick={() => {

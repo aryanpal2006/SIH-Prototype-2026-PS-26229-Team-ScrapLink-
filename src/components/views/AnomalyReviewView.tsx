@@ -1,7 +1,6 @@
 import React from 'react';
 import { useDashboard } from '../../context/DashboardContext';
 import { 
-  Sparkles, 
   CheckCircle2, 
   XCircle, 
   ShieldAlert
@@ -10,8 +9,7 @@ import {
 export const AnomalyReviewView: React.FC = () => {
   const { 
     lots, 
-    resolveAnomaly, 
-    setActiveFormulaModal
+    resolveAnomaly
   } = useDashboard();
 
   const anomalyLots = lots.filter(l => l.anomaly_flag || l.status === 'anomaly_review');
